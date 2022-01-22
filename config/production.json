@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://javascriptmastery:javascriptmastery@cluster0.mbfbn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "mySecretToken",
+    "gitHubClientId": "12e81eacadf90b231e13",
+    "gitHubSecret": "d3c937065fd1339dc0239388d26691c89cf7aed1"
+}

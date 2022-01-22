@@ -1,0 +1,35 @@
+{
+    "name": "social_media_devtool",
+    "version": "1.0.0",
+    "description": "Social metwork for developers",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "client": "npm start --prefix client --port=5000",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install build --prefix client"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "config": "^3.3.6",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-validator": "^6.11.1",
+        "gravatar": "^1.8.1",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.29.1",
+        "mongoose": "^5.12.11",
+        "react-moment": "^1.1.1",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "concurrently": "^6.2.0",
+        "nodemon": "^2.0.7"
+    }
+}
